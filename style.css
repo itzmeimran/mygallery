@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 17rem;
+    text-align: center;
+    font-family: Poppins;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBD6B8;
+}
+.imgs{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    width:100%;
+    
+}
+img{
+    box-shadow: 4px 4px 10px black;
+    margin: 0.8rem 0;
+    height:15em;
+    width:16em;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: all 0.7s ease;
+}
+
+img:hover{
+    filter: grayscale(0%);
+    height:16.5em;
+    width:18.5em;
+}
+
+@media (min-width:319px) and (max-width:720px){
+    .wrapper{
+        height:100%;
+        width:100%;
+        text-align: center;
+        display: flex;
+        padding:0;
+        margin:0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgs{
+        display: flex;
+        flex-wrap: wrap;
+        flex:1 1 0;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right:1rem;
+    }
+}
